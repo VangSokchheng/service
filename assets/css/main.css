@@ -1,0 +1,237 @@
+@import url("../files/Khmer\ CN\ Kam\ Rieng\ V2.ttf");
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-white: #fff;
+    --color-white2: #efe3d5;
+    --color-black: #000;
+    --color-black2: #0a2342;
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+    --color-bg3: #caced5;
+  
+    --container-width-lg: 85%;
+    --container-width-md: 90%;
+    --container-width-sm: 95%;
+  
+    --ff-1: 'Khmer OS Freehand';
+    --ff-2: 'Khmer CN Kam Rieng V2';
+
+    --sdw-font: drop-shadow(0 1px 1.5px #000);
+    --transition: all 400ms ease;
+  }
+  html,body {
+    scroll-behavior: smooth;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-white);
+    background: url("../image/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    line-height: 1.7;
+  }
+  .container {
+    margin: 0 auto;
+    width: var(--container-width-lg);
+  }
+  section {
+    padding: 6rem 0;
+  }
+  section h2 {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+  a {
+    color: var(--color-white);
+  }
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  .btn {
+    display: inline-block;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  .btn:hover {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+  }
+  .btn-primary {
+    background-color: var(--color-danger);
+    color: var(--color-white);
+  }
+  
+/* =================== NAVBER =================== */
+
+nav {
+  width: 100vw;
+  height: 4.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+/* chagne navbar stlye */
+.window-scroll {
+  
+  transition: var(--transition);
+  background-color: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.window-scroll .nav__menu a{
+  color: var(--color-white);
+}
+.window-scroll .nav__container .ctn-left h4{
+  color: var(--color-white);
+}
+.window-scroll .nav__container .ctn-left h4:hover{
+  color: var(--color-danger);
+}
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__container .ctn-left h4{
+  color: var(--color-black2);
+}
+.nav__container .ctn-left a,.ctn-left h4:hover{
+    transition: var(--transition);
+    color: var(--color-bg2);
+}
+
+nav button {
+  display: none;
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav__menu a {
+  color: var(--color-black2);
+  font-family: 'Khmer CN Kam Rieng V2';
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+.nav__menu .color__menu a{
+  color: var(--color-bg2);
+}
+.nav__menu .color__menu a:hover{
+  color: var(--color-danger);
+}
+.nav__menu a:hover {
+  color: var(--color-bg2);
+}
+
+
+/* =================== CONTENT =================== */
+
+.content__st{
+  display: flex;
+  gap: 1rem;
+}
+.content__st .content__st__left{
+    width: 70%;
+    /* height: 100%; */
+}
+.content__st .content__st__left .ctn__box{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background: var(--color-warning);
+}
+.content__st .content__st__left .ctn__box h2{
+    filter: var(--sdw-font);
+    font-family: var(--ff-2);
+}
+.content__st .content__st__left .ctn__box h3{
+    text-align: center;
+    color: #3163b9;
+    font-family: var(--ff-1)
+}
+.content__st .content__st__left .ctn__box .ol__list{
+    margin: 2rem 0 2rem 3rem;
+}
+.content__st .content__st__left .ctn__box .ol__list li {
+    margin: 0.5rem 0;
+}
+.content__st .content__st__left .ctn__box .ol__list li h4{
+    color: var(--color-success);
+}
+.line-bar{
+    margin: 1.5rem 0 1.6rem;
+    width: 100%;
+    height: 5px;
+    background: var(--color-danger);
+}
+.content__st .content__st__left .ctn__box .description__box{
+    border: 5px solid var(--color-danger);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+}
+.content__st .content__st__right{
+    /* float: right; */
+    width: 29%;
+    height: 100%;
+}
+.content__st .content__st__right .ctn__box__ads{
+    padding: 1rem;
+    /* float: right; */
+    /* width: 100%; */
+    position: sticky;
+    /* position: fixed; */
+    top: 0px;
+    height: 350px;
+    border-radius: 0.5rem;
+    background: var(--color-warning);
+}
+.content__st .content__st__right .ctn__box__ads h2{
+    font-family: var(--ff-2);
+    filter: var(--sdw-font);
+}
+
+
